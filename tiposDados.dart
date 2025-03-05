@@ -5,8 +5,6 @@
   definição de tipo de dado.
  */
 
-
-
 void main() {
   /**
    * tipos numéricos
@@ -16,14 +14,8 @@ void main() {
   int idade = 18;
   double altura = 1.80;
 
-
-
-
-  print(idade);
+  int ano = 2025;
   print(altura);
-
-
-
 
   /**
    * Tipo String
@@ -42,7 +34,7 @@ conforme o texto
   print(nome);
   print(saudacao);
   print(multiplasLinhas);
- 
+
   /**
    * Tipo Boolean - Boleano
    * representa um tipo de dado verdadeiro ou falso(true ou false)
@@ -50,14 +42,8 @@ conforme o texto
   bool isFlutter = true;
   bool isJavaScript = false;
 
-
-
-
   print(isFlutter);
   print(isJavaScript);
-
-
-
 
   /**
    * Tipo List
@@ -65,91 +51,54 @@ conforme o texto
    */
   List<String> frutas = ['banana', 'maçã', 'laranja'];
 
-
-
-
-  List<String> carros = [
-    'Vectra',
-    'Gol',
-    'Prisma',
-    'Mercedes',
-    'Corolla'
-  ];
+  List<String> carros = ['Vectra', 'Gol', 'Prisma', 'Mercedes', 'Corolla'];
   print(frutas[1]);
- 
+
   List<double> valores = [10, 20, 40, 50];
- 
+
   /**
    * Tipo Set
    * é uma coleção de itens únicos não duplicados
    */
-  Set<int> relacoes = {
-    2,3,4,5,6,3
-  };
+  Set<int> relacoes = {2, 3, 4, 5, 6, 3};
   print(relacoes);
-
-
-
 
   /**
    * Tipo Map
    * representa um conjunto ou objeto contendo chave:valor
    */
-  Map<String,int> alunos = {
-    'João':20,
-    "Maria":15,
-    "José":44
-  };
+  Map<String, int> alunos = {'João': 20, "Maria": 15, "José": 44};
   print(alunos['João']);
 
-
-
-
-  Map<String,String> cores = {
-    'black' : '#000000',
+  Map<String, String> cores = {
+    'black': '#000000',
     'red': '#FF6600',
-    'grey':'#ccccccc'
+    'grey': '#ccccccc',
   };
   print(cores['black']);
 
-
-
-
-/**
+  /**
  * Tipo dynamic
  * usado quando o tipo de dado é indefinido ou pode mudar
  */
 
+  dynamic semTipo = 30;
+  semTipo = "Vinícius";
 
-dynamic semTipo = 30;
-semTipo = "Vinícius";
-
-
-/**
+  /**
  * Tipo Null
  * o tipo null safety foi incorporado ao dart na versão 2.12
  * por padrão uma variavel não pode conter null, mas você pode usar o operador ?
  * para permitir valores nulos
  */
-String? pessoa = null;
+  String? pessoa = null;
 
-
-/*
+  /*
   Tipo Var
   o dart interfere automaticamente no tipo de variável com base no valor
   atribuido.
   isso funciona como uma tipagem dinamica.  
  */
-    var ano = 2025;
-    var aluno = "Vinizao";
-   
-
-
+  var ano = 2025;
+  var aluno = "Vinizao";
 }
-
-
-
-
-
-
-
