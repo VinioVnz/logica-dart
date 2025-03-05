@@ -14,7 +14,9 @@ void main() {
   int idade = 18;
   double altura = 1.80;
 
-  int ano = 2025;
+  String pessoa = "Vinicius";
+  double salario = 49500;
+  int mes = 10;
   print(altura);
 
   /**
@@ -91,7 +93,7 @@ conforme o texto
  * por padrão uma variavel não pode conter null, mas você pode usar o operador ?
  * para permitir valores nulos
  */
-  String? pessoa = null;
+  /*   String? pessoa = null; */
 
   /*
   Tipo Var
