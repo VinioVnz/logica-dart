@@ -17,6 +17,9 @@ void main() {
   String pessoa = "Vinicius";
   double salario = 49500;
   int mes = 10;
+
+  int resetar = 100;
+
   print(altura);
 
   /**
